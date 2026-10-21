@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/global_goose_5603), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [The Crown Jewels](./practice/sql/the-crown-jewels) | SQL | Easy | 2026-10-21 |
 | [All at Once](./practice/pipeline_architecture/all-at-once) | Pipeline Architecture | Medium | 2026-10-21 |
 
 <!-- datadriven:index:end -->
