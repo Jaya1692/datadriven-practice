@@ -1,0 +1,105 @@
+{
+  "components": [
+    {
+      "id": "s_1792626273463_17",
+      "name": "raw data 42 cities",
+      "type": "source",
+      "position": {
+        "x": 94,
+        "y": 97
+      }
+    },
+    {
+      "id": "s_1792626281067_18",
+      "name": "streaming data for 42 cities",
+      "type": "queue",
+      "position": {
+        "x": 98,
+        "y": 97
+      }
+    },
+    {
+      "id": "s_1792626288624_19",
+      "name": "transform",
+      "type": "transform",
+      "position": {
+        "x": 102,
+        "y": 97
+      }
+    },
+    {
+      "id": "s_1792626292435_20",
+      "name": "Transformed data in DWH",
+      "type": "source",
+      "position": {
+        "x": 107,
+        "y": 98
+      }
+    },
+    {
+      "id": "s_1792626308362_21",
+      "name": "3 years historical features",
+      "type": "storage",
+      "position": {
+        "x": 93,
+        "y": 102
+      }
+    },
+    {
+      "id": "s_1792626490081_26",
+      "name": "Readiness gate",
+      "type": "quality_gate",
+      "position": {
+        "x": 111,
+        "y": 99
+      }
+    },
+    {
+      "id": "s_1792626495099_27",
+      "name": "Backfill queue",
+      "type": "queue",
+      "position": {
+        "x": 111,
+        "y": 103
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": "s_1792626273463_17",
+      "to": "s_1792626281067_18",
+      "type": "data_flow"
+    },
+    {
+      "from": "s_1792626281067_18",
+      "to": "s_1792626288624_19",
+      "type": "data_flow"
+    },
+    {
+      "from": "s_1792626288624_19",
+      "to": "s_1792626292435_20",
+      "type": "data_flow"
+    },
+    {
+      "from": "s_1792626308362_21",
+      "to": "s_1792626273463_17",
+      "type": "data_flow"
+    },
+    {
+      "from": "s_1792626292435_20",
+      "to": "s_1792626490081_26",
+      "type": "data_flow"
+    },
+    {
+      "from": "s_1792626490081_26",
+      "to": "s_1792626281067_18",
+      "type": "data_flow"
+    },
+    {
+      "from": "s_1792626495099_27",
+      "to": "s_1792626308362_21",
+      "type": "data_flow"
+    }
+  ],
+  "zones": []
+}

@@ -8,6 +8,7 @@ Scored work from [DataDriven](https://datadriven.io/u/global_goose_5603), commit
 
 | Problem | Domain | Difficulty | Solved |
 |---|---|---|---|
+| [Thirty Cities, One Forecast](./practice/pipeline_architecture/thirty-cities-one-forecast) | Pipeline Architecture | Hard | 2026-10-21 |
 | [The Word Flipper](./practice/python/the-word-flipper) | Python | Easy | 2026-10-21 |
 | [Char Profile](./practice/python/char-profile) | Python | Medium | 2026-10-21 |
 | [Bronze Medal](./practice/sql/bronze-medal) | SQL | Easy | 2026-10-21 |
